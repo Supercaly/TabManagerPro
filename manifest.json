@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Tab Manager Pro",
+    "version": "0.0.1",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {},
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "commands": {
+        "duplicate_page": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+D",
+                "mac": "Command+Shift+D"
+            },
+            "description": "Duplicate the current page"
+        },
+        "default_pages": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+H",
+                "mac": "Command+Shift+H"
+            },
+            "description": "Open the default pages"
+        }
+    }
+}
