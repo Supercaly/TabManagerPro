@@ -2,7 +2,6 @@ console.log("Background running");
 
 chrome.browserAction.onClicked.addListener(() => {
     openDefaultPages();
-    //chrome.storage.sync.set("")
 });
 
 chrome.commands.onCommand.addListener((command) => {
@@ -25,12 +24,7 @@ chrome.commands.onCommand.addListener((command) => {
  * This function opens the default pages
  */
 function openDefaultPages() {
-    //Open the default pages
-    // chrome.storage.sync.get(["homePages"], (pages) => {
-    //     console.log(pages);
-    //     pages.homePages.forEach((page) => {chrome.tabs.create({'url': page});});
-    // });
     chrome.tabs.create({'url': "https://facebook.com"});
     chrome.tabs.create({'url': "https://youtube.com"});
-    chrome.tabs.create({'url': "https://web.whatsapp.com/"});
+    chrome.tabs.create({'url': "https://web.whatsapp.com"});
 }
