@@ -23,7 +23,7 @@
             "32": "icons/tab-32.png",
             "64": "icons/tab-64.png"
         },
-        "default_title": "TabManagerPro Settings"
+        "default_title": "TabManagerPro"
     },
     
     "permissions": ["tabs"],
